@@ -1,7 +1,7 @@
-<style type="text/css" rel="stylesheet">
+<!-- <style type="text/css" rel="stylesheet">
     h1, h2, h3 { font-weight: bold; }
     .warning { color: red; font-weight: bold; margin-bottom: 10px;}
-</style>
+</style> -->
 
 # [Algoritmos e Estruturas de Dados 2020 2021](https://elearning.ual.pt/course/view.php?id=1787) - [UAL](https://autonoma.pt/) <!-- omit in toc -->
 
