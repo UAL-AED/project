@@ -619,7 +619,26 @@ A não comparência na prova de autoria implica a anulação da participação i
 
 O projeto é avaliado com base em duas componentes: quantitativa (*A*), e qualitativa (*B*). A nota final do projeto é determinada por *(0.5 x A) + (0.5 x B)*.
 
-**Todas as instruções correspondem a 1 valor.**
+| Instrução | Peso      |
+| --------- | --------- |
+| DD        | 2 valores |
+| RC        | 1 valor   |
+| RP        | 1 valor   |
+| RS        | 1 valor   |
+| RE        | 1 valor   |
+| AP        | 2 valores |
+| CP        | 1 valor   |
+| AF        | 1 valor   |
+| DF        | 1 valor   |
+| ES        | 1 valor   |
+| EC        | 1 valor   |
+| LP        | 1 valor   |
+| LF        | 1 valor   |
+| LS        | 1 valor   |
+| LSA       | 1 valor   |
+| LSAF      | 1 valor   |
+| AS        | 1 valor   |
+| CA        | 1 valor   |
 
 A avaliação qualitativa irá considerar que existem várias formas de resolver o problema descrito, mas que se exige a utilização dos instrumentos e métodos apresentados na unidade curricular de Algoritmos e Estruturas de Dados, nomeadamente:
 
