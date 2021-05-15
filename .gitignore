@@ -1,0 +1,8 @@
+.vscode/
+*pyc
+htmlcov/
+.coverage
+.DS_Store
+build/
+dist/
+*.egg-info/
