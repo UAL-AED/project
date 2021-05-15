@@ -601,9 +601,7 @@ Deve existir, na raiz do repositório:
 
 O código fonte entregue será sujeito a validação com um conjunto de testes reservado para esse efeito.
 
-<div class="warning">
 A ausência de identificação individual no ficheiro de relatório implica a anulação da participação individual no projeto.
-</div>
 
 ## Prova de Autoria
 
@@ -611,9 +609,7 @@ Todos os projetos entregues serão sujeitos a prova de autoria. Para esse efeito
 
 O calendário das provas de autoria será disponibilizado no *e-learning*, após o prazo de entrega da implementação do projeto.
 
-<div class="warning">
 A não comparência na prova de autoria implica a anulação da participação individual no projeto.
-</div>
 
 ## Avaliação
 
@@ -653,7 +649,7 @@ A avaliação qualitativa irá considerar que existem várias formas de resolver
 
 A implementação estrita de todas as instruções descritas neste enunciado assegura, sem prejuízo de reprovação por irregularidade académica, a nota mínima de 10 valores.
 
-<div class="warning">A utilização de estruturas de dados não autorizadas (i.e., listas, tuplos, conjuntos, e dicionários Python), ou a utilização de módulos externos não implementados pelo grupo de trabalho, determina uma nota máxima de 12 valores no projeto.</div>
+A utilização de estruturas de dados não autorizadas (i.e., listas, tuplos, conjuntos, e dicionários Python), ou a utilização de módulos externos não implementados pelo grupo de trabalho, determina uma nota máxima de 12 valores no projeto.
 
 Caso ocorram dúvidas sobre a autorização de determinada estrutura ou módulo, os docentes devem ser contactados para determinar a autorização de utilização.
 
