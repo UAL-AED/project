@@ -92,7 +92,7 @@ O formato da data indicada deve ser *AAAAMMDD* (4 algarismo para o ano, 2 para o
 
 Entrada:
 
-    DD AAAMMDD
+    DD AAAAMMDD
 
 Saída com sucesso:
 
@@ -309,7 +309,7 @@ O conteúdo eliminado deixa de estar disponível para alugar, e todos os aluguer
 
 Entrada:
 
-    EST IdentificadorSérie NúmeroTemporada NúmeroEpisódio
+    ES IdentificadorSérie NúmeroTemporada NúmeroEpisódio
 
 Saída com sucesso:
 
