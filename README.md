@@ -1,13 +1,9 @@
-<!-- <style type="text/css" rel="stylesheet">
-    h1, h2, h3 { font-weight: bold; }
-    .warning { color: red; font-weight: bold; margin-bottom: 10px;}
-</style> -->
-
 # [Algoritmos e Estruturas de Dados 2020 2021](https://elearning.ual.pt/course/view.php?id=1787) - [UAL](https://autonoma.pt/) <!-- omit in toc -->
 
 ## Projeto <!-- omit in toc -->
 
 - [Datas Relevantes](#datas-relevantes)
+  - [2021/06/11 Atualização](#20210611-atualização)
 - [Descrição](#descrição)
 - [Instruções](#instruções)
   - [Definir data atual (DD)](#definir-data-atual-dd)
@@ -42,11 +38,57 @@
 | 27/06/2021 23:59:59 GMT   | Entrega final do trabalho.           |
 | 28/06/2021 --- 06/07/2021 | Provas de autoria.                   |
 
+
+### 2021/06/11 Atualização
+
+- Foram adicionados os testes de output;
+- Foram alterados alguns parâmetros, saídas, e descrições de instruções.
+
+      git remote add upstream https://github.com/UAL-AED/project
+      git fetch upstream
+      git checkout upstream/main README.md
+      git checkout upstream/main iotests/AF.in
+      git checkout upstream/main iotests/AF.out
+      git checkout upstream/main iotests/AP.in
+      git checkout upstream/main iotests/AP.out
+      git checkout upstream/main iotests/AS.in
+      git checkout upstream/main iotests/AS.out
+      git checkout upstream/main iotests/CA.in
+      git checkout upstream/main iotests/CA.out
+      git checkout upstream/main iotests/CP.in
+      git checkout upstream/main iotests/CP.out
+      git checkout upstream/main iotests/DD.in
+      git checkout upstream/main iotests/DD.out
+      git checkout upstream/main iotests/DF.in
+      git checkout upstream/main iotests/DF.out
+      git checkout upstream/main iotests/EC.in
+      git checkout upstream/main iotests/EC.out
+      git checkout upstream/main iotests/ES.in
+      git checkout upstream/main iotests/ES.out
+      git checkout upstream/main iotests/LF.in
+      git checkout upstream/main iotests/LF.out
+      git checkout upstream/main iotests/LP.in
+      git checkout upstream/main iotests/LP.out
+      git checkout upstream/main iotests/LS.in
+      git checkout upstream/main iotests/LS.out
+      git checkout upstream/main iotests/LSA.in
+      git checkout upstream/main iotests/LSA.out
+      git checkout upstream/main iotests/LSAF.in
+      git checkout upstream/main iotests/LSAF.out
+      git checkout upstream/main iotests/RC.in
+      git checkout upstream/main iotests/RC.out
+      git checkout upstream/main iotests/RE.in
+      git checkout upstream/main iotests/RE.out
+      git checkout upstream/main iotests/RP.in
+      git checkout upstream/main iotests/RP.out
+      git checkout upstream/main iotests/RS.in
+      git checkout upstream/main iotests/RS.out
+
 ## Descrição
 
 Considere uma uma loja online para aluguer de séries.
 
-A loja oferece os seus serviços a clientes. Cada cliente pode adquirir um plano individual, ou familiar (ver a [Tabela 1](#tab-plans)). 
+A loja oferece os seus serviços a clientes. Cada cliente pode adquirir um plano individual, ou familiar (ver a [Tabela 1](#tab-plans)).
 
 Cada cliente tem um estado atribuído, que deve corresponder ao plano de subscrição de serviço. Estes estados são: *Standard*, *Premium*, *Pack* família, ou *Cancelado*.
 
@@ -84,6 +126,8 @@ A descrição de cada instrução pretende ser exaustiva, e sem ambiguidades. N�
 
 A implementação não deve suportar mais instruções do que as que estão descritas.
 
+O programa termina quando for introduzida uma linha em branco, fora do contexto de uma instrução.
+
 ### Definir data atual (DD)
 
 Altera a data atual da aplicação para a data indicada.  A data indicada não pode ser anterior à data atualmente em vigor (se existir). A atualização de datas implica a atualização dos registo de aluguer.
@@ -92,7 +136,7 @@ O formato da data indicada deve ser *AAAAMMDD* (4 algarismo para o ano, 2 para o
 
 Entrada:
 
-    DD AAAAMMDD
+    DD AAAMMDD
 
 Saída com sucesso:
 
@@ -108,11 +152,11 @@ Saída com insucesso:
 
 Regista um novo cliente. Cada cliente é composto por um identificador (atribuído automaticamente), nome, e tipo de plano (*Standard* e *Premium*). O nome é único no universo de clientes. É possível registar um cliente pré-existente apenas se o seu plano atual for *Cancelado*, passando a assumir o novo plano indicado.
 
-`Nome` é o nome do cliente, e `Plano` é o plano de subscrição (ver [Tabela 1](#tab-plans)). `IdentificadorSérie` é o identificador único do cliente, gerado automaticamente.
+`Nome` é o nome do cliente, que pode conter espaços, e `Plano` é o plano de subscrição (ver [Tabela 1](#tab-plans)). `IdentificadorSérie` é o identificador único do cliente, gerado automaticamente, numa sequência de números inteiros iniciada em 1.
 
 Entrada:
 
-    RC Nome Plano
+    RC Plano Nome
 
 Saída com sucesso:
 
@@ -134,15 +178,17 @@ Saída com insucesso:
 
 ### Registar família (RP)
 
-Regista um novo *pack* família. O nome deve ser único no universo de famílias. Não existe limite para o número de famílias.
+Regista um novo *pack* família. O nome deve ser único no universo de famílias, e não contém espaços. Não existe limite para o número de famílias.
 
-`NomeFamília` é o nome único da família, e pode conter espaços. `IdentificadorFamília` é o identificador único da família, gerado automaticamente.
+`NomeFamília` é o nome único da família, e pode conter espaços. `IdentificadorFamília` é o identificador único da família, gerado automaticamente, numa sequência de números inteiros iniciada em 1.
 
 Entrada:
 
     RP NomeFamília
 
 Saída com sucesso:
+
+    Família registada com identificador IdentificadorFamília
 
 Saída com insucesso:
 
@@ -158,7 +204,7 @@ Saída com insucesso:
 
 Regista uma nova série.
 
-`NomeSérie` é o nome único da série, e pode conter espaços. `IdentificadorSérie` é o identificador único da série, gerado automaticamente.
+`NomeSérie` é o nome único da série, e pode conter espaços. `IdentificadorSérie` é o identificador único da série, gerado automaticamente, numa sequência de números inteiros iniciada em 1.
 
 Entrada:
 
@@ -166,7 +212,7 @@ Entrada:
 
 Saída com sucesso:
 
-    Série registada com o identificador IdentificadorSérie
+    Série registada com o identificador IdentificadorSérie.
 
 Saída com insucesso:
 
@@ -205,7 +251,6 @@ Altera o plano associado ao cliente individual, para *Standard* ou *Premium*.
 `IdentificadorCliente` é o identificador do cliente, e `Plano` o nome do plano de subscrição de serviço.
 
 O conteúdo alugado pelo cliente passa a estar sujeito às caraterísticas do novo plano. Pode ser necessário terminar alugueres ativos.
-
 
 Entrada:
 
@@ -247,7 +292,9 @@ Saída com insucesso:
 
 ### Associar cliente a família (AF)
 
-Associa um cliente a uma família. O cliente tem que estar previamente registado. Cada cliente só pode pertencer a uma família.
+Associa um cliente ao plano de uma família. O cliente tem que estar previamente registado. Cada cliente só pode pertencer a uma família.
+
+O estado do conteúdo alugado pelo cliente deve ser atualizado de acordo com as condições do plano *pack* Família.
 
 `IdentificadorFamília` é o identificador da família, e  `IdentificadorCliente` é o identificador do cliente.
 
@@ -276,6 +323,8 @@ Saída com insucesso:
 ### Desassociar cliente de família (DF)
 
 Elimina a associação entre cliente e família. O cliente passa para o plano *Cancelado*.
+
+O conteúdo alugado pelo cliente deve ser cancelado.
 
 `IdentificadorCliente` é o identificador do cliente.
 
@@ -374,7 +423,7 @@ Saída com insucesso:
 
 ### Listar famílias (LF)
 
-Lista todas as famílias por ordem alfabética. Por cada família, lista todos os clientes da família por ordem alfabética de nome.
+Lista todas as famílias por ordem alfabética de nome de família. Por cada família, lista todos os clientes da família por ordem alfabética de nome.
 
 `NomeFamília` é o nome de uma família, e `NomeCliente` é o nome de um cliente.
 
@@ -475,6 +524,10 @@ Saída com insucesso:
 
       Família inexistente.
 
+- Quando não existem séries alugadas por elementos da família:
+
+      Sem séries alugadas.
+
 ### Alugar série (AS)
 
 Regista o aluguer de episódio(s) de uma série.
@@ -482,6 +535,8 @@ Regista o aluguer de episódio(s) de uma série.
 Deve ser indicado o nome do cliente seguido do nome da série e indicação da temporada e respetivo número do episódio. Se nenhum número de episódio for indicado, o cliente aluga todos os episódios da temporada indicada.
 
 `IdentificadorCliente` é o identificador do cliente, `IdentificadorSérie` é o identificador da série, e `NúmeroTemporada` é o número da temporada. `NúmeroEpisódio` (opcional) é o número do episódio a subscrever.
+
+Só pode existir um aluguer ativo de um determinado episódio por cliente. Caso seja indicado um episódio atualmente alugado, o aluguer do episódio deve ser ignorado (sem prejuízo dos restantes episódios a alugar).
 
 Entrada:
 
@@ -530,6 +585,10 @@ Saída com sucesso:
     Aluguer de conteúdo cancelado com sucesso.
 
 Saída com insucesso:
+
+- Quando não existe data definida.
+
+      Sem data definida.
 
 - Quando o cliente não existe:
 

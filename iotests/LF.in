@@ -1,0 +1,16 @@
+LF
+DD 20210101
+RP Smith
+LF
+RP Jones
+LF
+RC Standard Alice
+RC Standard Bob
+RC Standard Trudy
+AF 1 2
+LF
+AF 1 1
+LF
+AF 2 3
+LF
+

@@ -1,0 +1,17 @@
+LSAF 1
+DD 20210101
+RP Smith
+RC Standard Alice
+RC Standard Bob
+AF 1 1
+AF 1 2
+RS The Wire
+RE 1 1 1 The Target
+RS Peaky Blinders
+RE 2 1 1 Episode #1.1
+AS 1 1 1
+AS 2 2 1
+AS 2 1 1
+LSAF 1
+
+
