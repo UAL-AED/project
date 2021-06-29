@@ -3,6 +3,7 @@
 ## Projeto <!-- omit in toc -->
 
 - [Datas Relevantes](#datas-relevantes)
+  - [2021/06/29 Atualização](#20210629-atualização)
   - [2021/06/11 Atualização](#20210611-atualização)
 - [Descrição](#descrição)
 - [Instruções](#instruções)
@@ -31,13 +32,27 @@
 - [Avaliação](#avaliação)
 
 ## Datas Relevantes
+
 | Data                      | Evento                               |
 | ------------------------- | ------------------------------------ |
 | 15/05/2021                | Disponibilização do enunciado.       |
 | 30/05/2021                | Disponibilização de testes públicos. |
-| 27/06/2021 23:59:59 GMT   | Entrega final do trabalho.           |
-| 28/06/2021 --- 06/07/2021 | Provas de autoria.                   |
+| 04/07/2021 23:59:59 GMT   | Entrega final do trabalho.           |
+| 05/06/2021 --- 09/07/2021 | Provas de autoria.                   |
 
+### 2021/06/29 Atualização
+
+- A data de entrega foi alterada;
+- O resultado esperado de alguns testes de *output* foi retificado.
+
+      git fetch upstream
+      git checkout upstream/main README.md
+      git checkout upstream/main iotests/CA.in
+      git checkout upstream/main iotests/DD.out
+      git checkout upstream/main iotests/ES.out
+      git checkout upstream/main iotests/LF.out
+      git checkout upstream/main iotests/LP.out
+      git checkout upstream/main iotests/RC.out
 
 ### 2021/06/11 Atualização
 
@@ -188,7 +203,7 @@ Entrada:
 
 Saída com sucesso:
 
-    Família registada com identificador IdentificadorFamília
+    Família registada com identificador IdentificadorFamília.
 
 Saída com insucesso:
 
