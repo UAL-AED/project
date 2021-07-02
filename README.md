@@ -42,6 +42,17 @@
 
 ### 2021/06/29 Atualização
 
+- O *input* do teste DF foi corrigido (removido um espaço em branco no final de uma linha);
+- O *output* do teste CA foi corrigido (não considerava o cancelamento de aluguer de série após todos os alugueres de episódios terem sido cancelados.)
+
+      git fetch upstream
+    
+      git checkout upstream/main README.md
+      git checkout upstream/main iotests/DF.in
+      git checkout upstream/main iotests/CA.out
+
+### 2021/06/29 Atualização
+
 - A data de entrega foi alterada;
 - O resultado esperado de alguns testes de *output* foi retificado.
 
