@@ -46,7 +46,6 @@
 - O *output* do teste CA foi corrigido (não considerava o cancelamento de aluguer de série após todos os alugueres de episódios terem sido cancelados.)
 
       git fetch upstream
-    
       git checkout upstream/main README.md
       git checkout upstream/main iotests/DF.in
       git checkout upstream/main iotests/CA.out
