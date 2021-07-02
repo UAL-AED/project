@@ -43,12 +43,14 @@
 ### 2021/06/29 Atualização
 
 - O *input* do teste DF foi corrigido (removido um espaço em branco no final de uma linha);
-- O *output* do teste CA foi corrigido (não considerava o cancelamento de aluguer de série após todos os alugueres de episódios terem sido cancelados.)
+- O *output* do teste CA foi corrigido (não considerava o cancelamento de aluguer de série após todos os alugueres de episódios terem sido cancelados);
+- O *output* do teste LP foi corrigido (falta uma letra *s*).
 
       git fetch upstream
       git checkout upstream/main README.md
       git checkout upstream/main iotests/DF.in
       git checkout upstream/main iotests/CA.out
+      git checkout upstream/main iotests/LP.out
 
 ### 2021/06/29 Atualização
 
