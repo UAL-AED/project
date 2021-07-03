@@ -40,7 +40,7 @@
 | 04/07/2021 23:59:59 GMT   | Entrega final do trabalho.           |
 | 05/06/2021 --- 09/07/2021 | Provas de autoria.                   |
 
-### 2021/06/29 Atualização
+### 2021/07/02 Atualização
 
 - O *input* do teste DF foi corrigido (removido um espaço em branco no final de uma linha);
 - O *output* do teste CA foi corrigido (não considerava o cancelamento de aluguer de série após todos os alugueres de episódios terem sido cancelados);
